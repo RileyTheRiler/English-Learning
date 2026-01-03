@@ -1,5 +1,6 @@
 services:
-  - type: site
+  - type: web
+    runtime: static
     name: english-englishquest
 
     buildCommand: npm run build
