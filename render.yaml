@@ -1,9 +1,9 @@
 services:
-  - type: static
+  - type: site
     name: english-englishquest
-    env: static
+
     buildCommand: npm run build
-    publishDir: dist
+    staticPublishPath: dist
     routes:
       - type: rewrite
         source: /*
