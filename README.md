@@ -49,12 +49,8 @@ A gamified English learning application built with React, Vite, and TailwindCSS.
 4.  The `vercel.json` file handles SPA routing (reloads on subpages).
 
 ### Render
-1.  Create a new **Static Site** on Render.
-2.  Connect your GitHub repository.
-3.  Use the following settings:
-    -   **Build Command:** `npm run build`
-    -   **Publish Directory:** `dist`
-4.  Add a **Rewrite Rule** in the Render Dashboard -> Redirects/Rewrites:
-    -   **Source:** `/*`
-    -   **Destination:** `/index.html`
-    -   **Action:** Rewrite
+1.  Push code to GitHub.
+2.  On Render, click **New +** and select **Blueprint**.
+3.  Connect your GitHub repository.
+4.  Render will automatically detect the `render.yaml` configuration and set everything up for you (Build command, Output directory, and SPA Rewrites).
+5.  Click **Apply** to deploy.

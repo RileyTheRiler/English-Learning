@@ -1,0 +1,10 @@
+services:
+  - type: static
+    name: english-englishquest
+    env: static
+    buildCommand: npm run build
+    publishDir: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
